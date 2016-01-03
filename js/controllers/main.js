@@ -3,10 +3,13 @@ materialAdmin
     // Base controller for common functions
     // =========================================================================
 
-    .controller('materialadminCtrl', function($timeout, $state, $scope, growlService){
+    .controller('materialadminCtrl', function($timeout, $state, $scope, growlService, UserService){
         //Welcome Message
         growlService.growl('Welcome back Mallinda!', 'inverse')
         
+        UserService.resources().then(function(response){
+        	console.log(response);
+        });
         
         // Detact Mobile Browser
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -15,7 +18,7 @@ materialAdmin
 
         // By default Sidbars are hidden in boxed layout and in wide layout only the right sidebar is hidden.
         this.sidebarToggle = {
-            left: false,
+            left: true,
             right: false
         }
 
