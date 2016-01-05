@@ -1,11 +1,11 @@
 materialAdmin.service('UserService', [ '$http', '$q', function($http, $q) {
 	var user = {
-		resources : [ '1', '2' ]
+		resources : undefined
 	};
 	return {
 		resources : function() {
 			var deferred = $q.defer();
-			if (user.resources.length > 0) {
+			if (user.resources) {
 				deferred.resolve({
 					data : user.resources
 				});

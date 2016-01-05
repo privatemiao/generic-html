@@ -8,7 +8,7 @@ materialAdmin
         growlService.growl('Welcome back Mallinda!', 'inverse')
         
         UserService.resources().then(function(response){
-        	console.log(response);
+        	$scope.resources = response.data;
         });
         
         // Detact Mobile Browser
