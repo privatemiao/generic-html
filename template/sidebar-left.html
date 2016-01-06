@@ -23,7 +23,7 @@
 		<li data-ng-if="menu.type === 'MENU'" data-ui-sref-active="active" data-ng-repeat="menu in resources"><a data-ui-sref="{{menu.uri}}"
 			data-ng-click="mactrl.sidebarStat($event)"><i class="{{menu.css}}"></i> {{menu.name}}</a></li>
 
-		<li data-ng-if="menu.type === 'ACCORDION'" class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('generic') }" data-ng-repeat="menu in resources"><a
+		<li data-ng-if="menu.type === 'ACCORDION'" class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('{{menu.uri}}') }" data-ng-repeat="menu in resources"><a
 			href="" toggle-submenu><i class="{{menu.css}}"></i> {{menu.name}}</a>
 			<ul>
 				<li data-ng-repeat="node in menu.nodes"><a data-ui-sref-active="active" data-ui-sref="{{node.uri}}" data-ng-click="mactrl.sidebarStat($event)">{{node.name}}</a></li>
