@@ -541,4 +541,23 @@ materialAdmin
                 url: '/breadcrumb-demo',
                 templateUrl: 'views/breadcrumb-demo.html'
             })
+            //------------------------------
+            // GENERIC
+            //------------------------------            
+            //------------------------------
+            // SYSTEM
+            //------------------------------            
+            .state('system', {
+                url: '/system',
+                templateUrl: 'views/common.html'                
+            })
+            .state('system.user', {
+            	url: '/user',
+                templateUrl: 'views/generic/system/user.html'
+            })
+            .state('system.role', {
+            	url: '/role',
+            	templateUrl: 'views/generic/blank.html'
+            })
+            
     });
