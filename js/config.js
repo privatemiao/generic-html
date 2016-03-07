@@ -557,7 +557,7 @@ materialAdmin
             })
             .state('system.role', {
             	url: '/role',
-            	templateUrl: 'views/generic/blank.html'
+            	templateUrl: 'http://127.0.0.1/generic/role.html'
             })
             
     });
