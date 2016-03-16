@@ -1,3 +1,0 @@
-materialAdmin.contriller('RoleController', function() {
-	
-});
