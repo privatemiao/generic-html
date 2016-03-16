@@ -159,16 +159,3 @@
     margin-right: 25px;
     vertical-align: top;
 }
-
-.no-padding{
-	padding: 0 0;
-}
-
-.no-padding-h {
-	padding-left: 0;
-	padding-right: 0;
-}
-.no-padding-v {
-	padding-top: 0;
-	padding-bottom: 0;
-}
