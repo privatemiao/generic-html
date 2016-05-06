@@ -9,6 +9,7 @@ materialAdmin
         
         UserService.resources().then(function(response){
         	$scope.resources = response.data;
+        	console.log('UserService->resources->', $scope.resources);
         });
         
         // Detact Mobile Browser

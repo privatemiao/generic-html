@@ -10,7 +10,7 @@ materialAdmin.service('UserService', [ '$http', '$q', function($http, $q) {
 					data : user.resources
 				});
 			} else {
-				$http.get('generic/system/resources').then(function(response) {
+				$http.get('generic/system/personalresources').then(function(response) {
 					deferred.resolve(response);
 				}, function(error) {
 					deferred.reject(error);
