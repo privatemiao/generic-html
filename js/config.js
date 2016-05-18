@@ -464,17 +464,5 @@ materialAdmin.config(function($stateProvider, $urlRouterProvider) {
 		url : '/role',
 		templateUrl : 'http://127.0.0.1/generic/role.html'
 	})
-	// ------------------------------
-	// PHOTO
-	// ------------------------------
-	.state('photo', {
-		url : '/photo',
-		templateUrl : 'views/common.html'
-	}).state('photo.view', {
-		url : '/photo',
-		templateUrl : 'views/generic/photo/view.html'
-	}).state('photo.upload', {
-		url : '/photo',
-		templateUrl : 'views/generic/photo/upload.html'
-	})
+	
 });
